@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A jornada pelo vale perdido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <!-- Cena 1: O início da jornada -->
+        <div class="passo ativo" id="passo-0">
+            <p>Você é um jovem explorador que encontra um mapa antigo que leva ao misterioso <strong>Vale Perdido</strong>, uma região cercada de mistérios e lendas. Decidido a descobrir seus segredos, você embarca em uma jornada que pode mudar sua vida para sempre.</p>
+            <button class="btn-next" data-next="1">Continuar</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Você está diante de duas trilhas no início do Vale. O mapa antigo não é muito claro sobre qual caminho seguir, e uma escolha deve ser feita.</p>
+            <button class="btn-next" data-next="2">Seguir pela trilha da floresta densa.</button>
+            <button class="btn-next" data-next="3">Seguir pela trilha das montanhas rochosas.</button>
+        </div>
+
+        <!-- Cena 2: A floresta densa -->
+        <div class="passo" id="passo-2">
+            <p>Você entra na floresta. A luz do sol mal passa pelas árvores, e o ar está denso com o cheiro da natureza. Após alguns minutos de caminhada, você ouve um barulho vindo dos arbustos.</p>
+            <button class="btn-next" data-next="4">Investigar o barulho.</button>
+            <button class="btn-next" data-next="5">Continuar andando rapidamente, ignorando o som.</button>
+        </div>
+        
+        <div class="passo" id="passo-4">
+            <p>Você se aproxima lentamente dos arbustos e descobre uma criatura estranha com um mapa parecido com o seu, mas muito mais detalhado. A criatura te oferece o mapa em troca de uma joia que você carrega.</p>
+            <button class="btn-next" data-next="6">Aceitar a oferta e trocar a joia pelo mapa.</button>
+            <button class="btn-next" data-next="20">Recusar a oferta e seguir em frente.</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Com o novo mapa em mãos, você descobre uma rota oculta que leva diretamente ao coração do <strong>Vale Perdido</strong>, onde uma cidade perdida espera para ser explorada. Você acaba se tornando uma lenda, o explorador que encontrou o <strong>Vale Perdido</strong>!</p>
+            <button class="btn-next" data-next="0">Reiniciar.</button>
+        </div>
+        
+        <div class="passo" id="passo-5">
+            <p>Você acelera o passo e, em poucos minutos, encontra uma antiga cabana abandonada. No chão, há marcas de pegadas recentes, sugerindo que alguém esteve ali.</p>
+            <button class="btn-next" data-next="8">Entrar na cabana para investigar.</button>
+            <button class="btn-next" data-next="20">Continuar seguindo a trilha, sem olhar para trás.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Dentro da cabana, você encontra um morador misterioso que parece saber mais do que deixa transparecer. Ele te entrega uma chave e te conta sobre um tesouro escondido no Vale, mas alerta sobre perigos desconhecidos.</p>
+            <button class="btn-next" data-next="0">Reiniciar.</button>
+        </div>
+
+        <!-- Cena 3: As Montanhas Rachosas-->
+
+        <div class="passo" id="passo-3">
+            <p>Você segue pela trilha das montanhas, que se torna cada vez mais íngreme e traiçoeira. O vento gelado sopra forte, e de repente você avista uma caverna.</p>
+            <button class="btn-next" data-next="10">Entrar na caverna para se proteger do vento.</button>
+            <button class="btn-next" data-next="11">Continuar escalando a montanha, ignorando a caverna.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você segue pela trilha das montanhas, que se torna cada vez mais íngreme e traiçoeira. O vento gelado sopra forte, e de repente você avista uma caverna.</p>
+            <button class="btn-next" data-next="12">Explorar a sala secreta.</button>
+            <button class="btn-next" data-next="20">Sair da caverna imediatamente, sentindo que algo está errado.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>A escalada fica mais desafiadora, mas você persevera. No topo, você encontra uma vista deslumbrante do <strong>Vale Perdido</strong>. De repente, uma águia gigante pousa ao seu lado, carregando uma mensagem presa à pata.</p>
+            <button class="btn-next" data-next="14">Ler a mensagem da águia.</button>
+            <button class="btn-next" data-next="20">Ignorar a águia e seguir explorando.</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Ao entrar na sala, você encontra uma pedra brilhante flutuando no centro. Quando toca a pedra, uma energia poderosa percorre seu corpo. Uma voz ecoa: "Você agora é o guardião do <strong>Vale Perdido</strong>." <br>Com esse poder, você se torna responsável por proteger os segredos do Vale, garantindo que eles nunca caiam em mãos erradas. O mistério que você buscava agora é sua missão proteger.</p>
+            <button class="btn-next" data-next="0">Reiniciar.</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>A mensagem revela que a águia é a guardiã do <strong>Vale Perdido</strong>, e você foi escolhido para proteger seus segredos. Você aceita a responsabilidade e ganha a confiança da águia, se tornando o protetor do Vale.</p>
+            <button class="btn-next" data-next="0">Reiniciar.</button>
+        </div>
+
+        <!-- Fim: Se ignorar todas as pistas-->
+        <div class="passo" id="passo-20">
+            <p>Você continua sua jornada sem prestar atenção aos detalhes ao redor. Eventualmente, você se perde nas trilhas do <strong>Vale Perdido</strong>, sem descobrir seus segredos. Sua jornada termina sem respostas, e o Vale continua sendo um mistério.</p>
+            <button class="btn-next" data-next="0">Reiniciar.</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

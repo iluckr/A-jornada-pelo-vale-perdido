@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 500px;
+    background-color: #03A64A;
+    color: #025940;
+    font-family: "Prociono", serif;
+}
+
+button {
+    color: #024059;
+    font-family: "Prociono", serif;
+    background-color: #04BF8A;
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.077) 3px 3px 5px;
+}
+
+button:active {
+    background-color: #024059;
+    color: #04BF8A;
+}
+
+.passo {
+    display: none;
+}
+
+.ativo {
+    display: block;
+}
+
+main {
+    max-width: 90%;
+    text-align: center;
+}
